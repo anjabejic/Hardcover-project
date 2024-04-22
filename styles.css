@@ -1,0 +1,242 @@
+/* font-family: 'Abril Fatface', serif;
+font-family: 'Roboto', sans-serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    background-image: url(./images/BACKGROUND.jpg);
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    margin: 0 auto;
+    font-family: Roboto;
+}
+
+
+/* HEADER SECTION */
+
+header {
+    background: url(./images/BACKGROUND.jpg);
+    height: 120px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+header img {
+    width: 150px;
+}
+
+header .nav-button {
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 700;
+    padding: 15px;
+    border-radius: 10px;
+    background: #866249;
+}
+
+button:hover {
+    color: #B28A5D;
+    background-color: white;
+}
+
+
+/* BANNER SECTION */
+
+.banner {
+    position: relative;
+    padding-top: 40%;
+    background: url(./images/bannerimg.jpg) 0 0 no-repeat;
+    background-size: cover;
+}
+
+.banner .join-button {
+    color: #F2F2F2;
+    background: rgba(178, 138, 93, 1);
+    border-radius: 49px;
+    padding: 20px 30px;
+    position: absolute;
+    top: 65%;
+    left: 3%;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+/* BANNER UNDERTITLE */
+
+.undertitle {
+    font-family: 'Abril Fatface', serif;
+    font-size: 1.5rem;
+    line-height: 3.8rem;
+    letter-spacing: 0.15rem;
+    text-transform: uppercase;
+    color: #866249;
+    text-align: center;
+    margin: 50px 0;
+}
+
+
+
+/* FEATURED SECTION */
+
+.featured {
+    margin: 50px 0;
+    height: 400px;
+    background: #B28A5D;
+    /* border-radius: 0px 183px 0px 0px; */
+}
+
+.featured .subtitle {
+    font-family: 'Abril Fatface', serif;
+    font-size: 2.1rem;
+    line-height: 3.25rem;
+    letter-spacing: 0.155rem;
+    text-transform: uppercase;
+    color: #E5E5E5;
+    padding: 15px 0 15px 15px;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.img-container {
+    width: 180px;
+    overflow: hidden;
+}
+
+.img-container img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+
+
+
+/* CONTACT SECTION */
+
+.contact {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 70%;
+    height: 300px;
+    background-image: url(/images/CONTACT-BACKGROUND.jpg);
+    margin-bottom: 50px;
+    background-size: cover;
+}
+
+.contact h4 {
+    font-size: 30px;
+    bottom: 50%;
+    line-height: 3rem;
+    background: #866249;
+    color: #E5E5E5;
+    font-weight: 500;
+    padding: 15px;
+}
+
+/* COPYRIGHT */
+.copyright {
+    font-size: 20px;
+    color: #B28A5D;
+    padding: 10px 0 10px 20px;
+}
+
+
+/* -------- MEDIUM DEVICES (landscape tablets, 768px and up) -------- */
+@media only screen and (max-width: 768px) {
+
+    header .nav-button {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+
+    .banner .join-button {
+        border-radius: 49px;
+        padding: 20px 30px;
+        font-size: 1.2rem;
+    }
+
+    .undertitle {
+        font-size: 1.2rem;
+        line-height: 3rem;
+    }
+
+
+    .featured {
+        height: 300px;
+    }
+
+    .featured .subtitle {
+        font-size: 1.5rem;
+    }
+
+    .img-container {
+        width: 120px;
+    }
+
+
+    .contact {
+        height: 250px;
+    }
+
+    .contact h4 {
+        font-size: 1.4rem;
+        padding: 10px;
+    }
+
+
+    .copyright {
+        font-size: 1.2rem;
+    }
+}
+
+
+/* -- SMALL DEVICES (portrait tablets, large phones 600px and up) -- */
+@media only screen and (max-width: 600px) {
+
+    .banner .join-button {
+        padding: 13px 23px;
+        font-size: 1rem;
+    }
+
+
+    .undertitle {
+        font-size: 0.9rem;
+        line-height: 2.5rem;
+    }
+
+
+    .featured {
+        height: 250px;
+    }
+
+    .img-container {
+        width: 100px;
+    }
+
+
+    .contact {
+        height: 230px;
+    }
+
+    .contact h4 {
+        font-size: 1.3rem;
+        padding: 3px;
+    }
+
+
+    .copyright {
+        font-size: 1rem;
+    }
+}
